@@ -1,0 +1,1 @@
+<iframe class="{{size}}" src="https://panopla.com/pano/{{pano_id}}/embedded"></iframe>

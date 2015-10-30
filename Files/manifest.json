@@ -1,0 +1,44 @@
+{
+  "manifest": "1",
+  "version": "1.0.0",
+  "elements": [
+    {
+      "name": "Embedded Panorama",
+      "path": "files",
+      "version": "1.0.0",
+      "settings": {
+        "config": {
+          "autopop": true
+        },
+        "properties": [
+          {
+            "name": "settings",
+            "label": "Settings",
+            "type": "group",
+            "properties": [
+              {
+                "name": "pano_id",
+                "label": "Panorama ID",
+                "type": "int"
+              }
+            ]
+          },
+          {
+            "name": "advanced",
+            "label": "Advanced",
+            "type": "group",
+            "properties": [
+              {
+                "name": "size",
+                "label": "Size",
+                "type": "select",
+                "values": ["small", "medium", "large", "fill"],
+                "default": "medium"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
