@@ -1,4 +1,54 @@
-code {
-    width: 30%;
-    height: 30%;
+@pano_url: "";
+
+.pano-wrapper {
+    max-width: 100%;
+
+    // Pano sizing
+    &.pano-size-small {
+        width: 402px;
+    }
+
+    &.pano-size-medium {
+        width: 502px;
+    }
+
+    &.pano-size-large {
+        width: 602px;
+    }
+
+    &.pano-size-xlarge {
+        width: 702px;
+    }
+
+    &.pano-size-xxlarge {
+        width: 802px;
+    }
+
+    &.pano-size-auto {
+        width: 100%;
+    }
+
+    // Pano alignment
+    &.pano-align-right {
+       float: right;
+    }
+
+    &.pano-align-center {
+       margin: auto;
+    }
+}
+
+.pano-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.pano {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
