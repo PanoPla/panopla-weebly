@@ -17,23 +17,30 @@
             "type": "group",
             "properties": [
               {
-                "name": "pano_id",
-                "label": "Panorama ID",
-                "type": "int"
-              }
-            ]
-          },
-          {
-            "name": "advanced",
-            "label": "Advanced",
-            "type": "group",
-            "properties": [
+                "name": "pano_url",
+                "label": "Embedded Panorama URL",
+                "type": "string",
+                "default": "https://panopla.com/pano/111/embedded"
+              },
+              {
+                "name": "align",
+                "label": "Alignment",
+                "type": "align",
+                "default": "center"
+              },
               {
                 "name": "size",
                 "label": "Size",
                 "type": "select",
-                "values": ["small", "medium", "large", "fill"],
-                "default": "medium"
+                "values": [
+                  {"name": "Small", "value": "small"},
+                  {"name": "Medium", "value": "medium"},
+                  {"name": "Large", "value": "large"},
+                  {"name": "Extra Large", "value": "xlarge"},
+                  {"name": "Big", "value": "xxlarge"},
+                  {"name": "Auto", "value": "auto"}
+                ],
+                "default": "Auto"
               }
             ]
           }
